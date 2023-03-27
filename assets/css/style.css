@@ -1,0 +1,385 @@
+@charset "utf-8";
+@font-face {
+  font-family: "TheSludAndLionMedium";
+  src: url("../fonts/The-Slug-and-Lion.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TheSludAndLionSemibold";
+  src: url("../fonts/The-Slug-and-Lion.otf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TheSludAndLionBold";
+  src: url("../fonts/The-Slug-and-Lion.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* CSS Document */
+:root {
+  --main-body: #1e1e1e;
+  --white: #fff;
+  --black: #000;
+}
+
+/******* Common Element CSS Start ******/
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+body {
+  background-color: var(--main-body) !important;
+}
+.main-container {
+  background-repeat: no-repeat;
+  background-size: 65%;
+  /* opacity: 0.7; */
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  height: 560px;
+  overflow: hidden;
+}
+.main {
+  margin: 0px auto;
+  width: 750px;
+  height: 750px;
+  position: relative;
+}
+.big-circle {
+  background: url("../images/outer-circle.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* border: 3px solid #6495f2; */
+  /* border-radius: 50%; */
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  /* animation: Rotate 200s linear infinite;
+  -webkit-animation: Rotate 200s linear infinite; */
+}
+
+/* .icon-block::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #000;
+} */
+.icon-block {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  /* border-radius: 50%; */
+  /* background-image: linear-gradient(180deg, #4967e6 0%, #627bf4 100%);
+  -webkit-background-image: linear-gradient(180deg, #4967e6 0%, #627bf4 100%);
+  box-shadow: 0 2px 4px 0 #3e5ada;
+  -webkit-box-shadow: 0 2px 4px 0 #3e5ada; */
+}
+.icon-block .escape-icon {
+  width: 90px;
+}
+.icon-block .thecrow-icon {
+  width: 90px;
+}
+.icon-block .kong-icon {
+  width: 120px;
+}
+.icon-block .pacific-rim-icon {
+  width: 90px;
+}
+.icon-block .highlander-icon {
+  width: 90px;
+}
+.icon-block .total-recall-icon {
+  width: 90px;
+}
+.icon-block .rambo-icon {
+  width: 122px;
+}
+.icon-block .universal-soldier-icon {
+  width: 90px;
+}
+
+.icon-block .icon-block-img {
+  margin: 0px auto;
+  display: block;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  /* animation: Rotate-reverse 200s linear infinite;
+  -webkit-animation: Rotate-reverse 200s linear infinite; */
+  cursor: pointer;
+}
+.icon-block .icon-block-img:hover {
+  transform: scale(1.4);
+  transition: all 0.3s ease-in-out;
+}
+.icon-block .icon-block-img.active {
+  transform: scale(1.4);
+  transition: all 0.3s ease-in-out;
+}
+.icon-block:first-child {
+  cursor: pointer;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.icon-block:nth-child(2) {
+  cursor: pointer;
+  top: 15%;
+  right: 15%;
+  transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, -50%);
+}
+.icon-block:nth-child(3) {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, -50%);
+}
+.icon-block:nth-child(4) {
+  top: 65%;
+  left: 65%;
+  transform: translate(50%, 50%);
+  -webkit-transform: translate(50%, 50%);
+}
+.icon-block:nth-child(5) {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+}
+.icon-block:nth-child(6) {
+  bottom: 15%;
+  left: 15%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+}
+.icon-block:nth-child(7) {
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.icon-block:nth-child(8) {
+  top: 15%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+/* Content Box */
+.content-main {
+  width: 65%;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  bottom: 0;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.contentBx {
+  position: absolute;
+  transform: scale(0);
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+}
+.contentBx.active {
+  transform: scale(1);
+  opacity: 1;
+  transition-delay: 0.4s;
+}
+.contentBx .us-title {
+  font-size: 48px;
+}
+.contentBx .kong-title {
+  font-size: 80px;
+}
+.contentBx h1 {
+  font-family: "TheSludAndLionBold";
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.contentBx h3 {
+  font-family: "TheSludAndLionBold";
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 30px;
+  line-height: 26px;
+  text-align: center;
+}
+.contentBx p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--white);
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 28px;
+}
+
+.contentBx .btn-explore {
+  margin-top: 60px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  background-color: transparent;
+  width: 164px;
+  height: 46px;
+  text-transform: uppercase;
+  border: 1px solid var(--white);
+  border-radius: 0;
+  color: var(--white);
+  cursor: pointer;
+}
+.contentBx img {
+  max-width: 200px;
+}
+
+.text-rounded {
+  position: absolute;
+  width: 60%;
+  height: 64%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-rounded span {
+  position: absolute;
+  font-size: 22px;
+  transform-origin: 0 100px;
+}
+.circle {
+  animation: circle-rotate 10s linear infinite;
+  -webkit-animation: circle-rotate 10s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  width: 500px;
+  height: 500px;
+  border: 1px solid #dedede;
+  border-radius: 50%;
+}
+.circle::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border: 4px solid transparent;
+  border-left: 4px solid red;
+  border-right: 4px solid red;
+  border-radius: 50%;
+}
+.circle .icon-block img {
+  animation: img-rotate 200s linear infinite;
+  -webkit-animation: img-rotate 200s linear infinite;
+}
+
+/* keyframe animation */
+@keyframes Rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes Rotate {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@keyframes Rotate-reverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes Rotate-reverse {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes circle-rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(405deg);
+  }
+}
+
+@-webkit-keyframes circle-rotate {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(405deg);
+  }
+}
+
+@keyframes img-rotate {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(-405deg);
+  }
+}
+
+@-webkit-keyframes img-rotate {
+  from {
+    -webkit-transform: rotate(-45deg);
+  }
+  to {
+    -webkit-transform: rotate(-405deg);
+  }
+}

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EGG - Website</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+  </head>
+  <body>
+    <!-- Game Circle Section -->
+    <section class="main-container">
+      <div class="main">
+        <div class="big-circle">
+          <div
+            class="icon-block"
+            style="--i: 1"
+            data-id="content1"
+            onclick="onImageChange(1)"
+          >
+            <img
+              src="./assets/images/escape.png"
+              class="icon-block-img active escape-icon"
+              alt="Game Icons"
+              data-tab="1"
+            />
+          </div>
+          <div
+            class="icon-block content2"
+            style="--i: 2"
+            data-id="content2"
+            onclick="onImageChange(2)"
+          >
+            <img
+              src="./assets/images/the-crow.png"
+              class="icon-block-img thecrow-icon"
+              alt="Game Icons"
+              data-tab="2"
+            />
+          </div>
+          <div
+            class="icon-block content3"
+            style="--i: 3"
+            data-id="content3"
+            onclick="onImageChange(3)"
+          >
+            <img
+              src="./assets/images/kong.png"
+              class="icon-block-img kong-icon"
+              alt="Game Icons"
+              data-tab="3"
+            />
+          </div>
+          <div
+            class="icon-block content3"
+            style="--i: 4"
+            data-id="content4"
+            onclick="onImageChange(4)"
+          >
+            <img
+              src="./assets/images/pacific-rim.png"
+              class="icon-block-img pacific-rim-icon"
+              alt="Game Icons"
+              data-tab="4"
+            />
+          </div>
+          <div
+            class="icon-block"
+            style="--i: 5"
+            data-id="content5"
+            onclick="onImageChange(5)"
+          >
+            <img
+              src="./assets/images/highlander.png"
+              class="icon-block-img highlander-icon"
+              alt="Game Icons"
+              data-tab="5"
+            />
+          </div>
+          <div
+            class="icon-block"
+            style="--i: 6"
+            data-id="content6"
+            onclick="onImageChange(6)"
+          >
+            <img
+              src="./assets/images/total-recall.png"
+              class="icon-block-img total-recall-icon"
+              alt="Game Icons"
+              data-tab="5"
+            />
+          </div>
+          <div
+            class="icon-block"
+            style="--i: 7"
+            data-id="content7"
+            onclick="onImageChange(7)"
+          >
+            <img
+              src="./assets/images/rambo-ca.png"
+              class="icon-block-img rambo-icon"
+              alt="Game Icons"
+              data-tab="6"
+            />
+          </div>
+          <div
+            class="icon-block"
+            style="--i: 8"
+            data-id="content8"
+            onclick="onImageChange(8)"
+          >
+            <img
+              src="./assets/images/universal-soldier.png"
+              class="icon-block-img universal-soldier-icon"
+              alt="Game Icons"
+              data-tab="7"
+            />
+          </div>
+        </div>
+
+        <div class="text-rounded">
+          <!-- <h2 id="text">dive into the adentures</h2> -->
+        </div>
+        <div class="circle"></div>
+
+        <div class="content-main">
+          <div class="contentBx active selected" id="content1">
+            <h1>escape</h1>
+            <h3>From newyork</h3>
+            <p>
+              Everyday Heroes is the ultimate modern-day roleplaying game
+              system. Everyday Heroes is the ultimate modern-day roleplaying
+              game system.
+            </p>
+            <a href="#">
+              <button class="btn btn-explore" type="button">explore</button>
+            </a>
+          </div>
+          <div class="contentBx" id="content2">
+            <h1>crow</h1>
+            <p>
+              Everyday Heroes is the ultimate modern-day roleplaying game
+              system. Everyday Heroes is the ultimate modern-day roleplaying
+              game system.
+            </p>
+            <a href="#">
+              <button class="btn btn-explore" type="button">explore</button>
+            </a>
+          </div>
+          <div class="contentBx" id="content3">
+            <h1 class="kong-title">KONG</h1>
+            <h3>SKULL ISLAND</h3>
+            <p>
+              Everyday Heroes is the ultimate modern-day roleplaying game
+              system. Everyday Heroes is the ultimate modern-day roleplaying
+              game system.
+            </p>
+            <a href="#">
+              <button class="btn btn-explore" type="button">explore</button>
+            </a>
+          </div>
+          <div class="contentBx" id="content4">
+            <h1>Pacific rim</h1>
+            <p>
+              Everyday Heroes is the ultimate modern-day roleplaying game
+              system. Everyday Heroes is the ultimate modern-day roleplaying
+              game system.
+            </p>
+            <a href="#">
+              <button class="btn btn-explore" type="button">explore</button>
+            </a>
+          </div>
+          <div class="contentBx" id="content5">
+            <h1>HIGHLANDER</h1>
+            <p>
+              Everyday Heroes is the ultimate modern-day roleplaying game
+              system. Everyday Heroes is the ultimate modern-day roleplaying
+              game system.
+            </p>
+            <a href="#">
+              <button class="btn btn-explore" type="button">explore</button>
+            </a>
+          </div>
+          <div class="contentBx" id="content6">
+            <h1>TOtal Recall</h1>
+            <p>
+              Everyday Heroes is the ultimate modern-day roleplaying game
+              system. Everyday Heroes is the ultimate modern-day roleplaying
+              game system.
+            </p>
+            <a href="#">
+              <button class="btn btn-explore" type="button">explore</button>
+            </a>
+          </div>
+          <div class="contentBx" id="content7">
+            <h1>Rambo</h1>
+            <p>
+              Everyday Heroes is the ultimate modern-day roleplaying game
+              system. Everyday Heroes is the ultimate modern-day roleplaying
+              game system.
+            </p>
+            <a href="#">
+              <button class="btn btn-explore" type="button">explore</button>
+            </a>
+          </div>
+
+          <div class="contentBx" id="content8">
+            <h1 class="us-title">universal soldier</h1>
+            <p>
+              Everyday Heroes is the ultimate modern-day roleplaying game
+              system. Everyday Heroes is the ultimate modern-day roleplaying
+              game system.
+            </p>
+            <a href="#">
+              <button class="btn btn-explore" type="button">explore</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End -->
+
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- <script src="./assets/js/popper.min.js"></script> -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/jquery.lettering.js"></script>
+    <script src="./assets/js/circletype.min.js"></script>
+
+    <script>
+      $("#text").circleType({ position: "absolute" });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        var ismouseover = false;
+        $(".icon-block-img").click(function () {
+          var dataTab = $(this).data("tab");
+          var dataID = $(this).parent().data("id");
+          dataID = "#" + dataID;
+          $(dataID).addClass("active selected");
+          $(dataID).siblings().removeClass("selected");
+
+          ismouseover = false;
+        });
+
+        let iconBlock = document.querySelectorAll(".icon-block");
+        let contentBx = document.querySelectorAll(".contentBx");
+        let mainContainer = document.querySelectorAll(".main-container");
+
+        function onImageChange(a) {
+          if (a === 1) {
+            document.getElementsByClassName(
+              "main-container"
+            )[0].style.background =
+              "url('./assets/images/earth-bg.png') no-repeat center center/ 80%";
+          } else if (a === 2) {
+            document.getElementsByClassName(
+              "main-container"
+            )[0].style.background =
+              "url('./assets/images/game-bg.png') no-repeat center center/ 80%";
+          } else if (a === 3) {
+            document.getElementsByClassName(
+              "main-container"
+            )[0].style.background =
+              "url('./assets/images/crow-bg.png') no-repeat center center/ 80%";
+          } else if (a === 4) {
+            document.getElementsByClassName(
+              "main-container"
+            )[0].style.background =
+              "url('./assets/images/escape-bg.png') no-repeat center center/ 80%";
+          } else if (a === 5) {
+            document.getElementsByClassName(
+              "main-container"
+            )[0].style.background =
+              "url('./assets/images/pacific-rim-bg.png') no-repeat center center/ 80%";
+          } else if (a === 6) {
+            document.getElementsByClassName(
+              "main-container"
+            )[0].style.background =
+              "url('./assets/images/highlandar-bg.png') no-repeat center center/ 80%";
+          } else if (a === 7) {
+            document.getElementsByClassName(
+              "main-container"
+            )[0].style.background =
+              "url('./assets/images/game-bg.png') no-repeat center center/ 80%";
+          } else if (a === 8) {
+            document.getElementsByClassName(
+              "main-container"
+            )[0].style.background =
+              "url('./assets/images/game-bg.png') no-repeat center center/ 80%";
+          }
+        }
+
+        function changeContentOnMouseHover() {
+          for (let i = 0; i < iconBlock.length; i++) {
+            document.getElementsByClassName(
+              "main-container"
+            )[0].style.backgroundImage = "url('./assets/images/earth-bg.png')";
+            iconBlock[i].addEventListener("mouseover", function () {
+              if (i === 0) {
+                document.getElementsByClassName(
+                  "main-container"
+                )[0].style.backgroundImage =
+                  "url('./assets/images/earth-bg.png')";
+              } else if (i === 1) {
+                document.getElementsByClassName(
+                  "main-container"
+                )[0].style.backgroundImage =
+                  "url('./assets/images/game-bg.png')";
+              } else if (i === 2) {
+                document.getElementsByClassName(
+                  "main-container"
+                )[0].style.backgroundImage =
+                  "url('./assets/images/crow-bg.png')";
+              } else if (i === 3) {
+                document.getElementsByClassName(
+                  "main-container"
+                )[0].style.backgroundImage =
+                  "url('./assets/images/escape-bg.png')";
+              } else if (i === 4) {
+                document.getElementsByClassName(
+                  "main-container"
+                )[0].style.backgroundImage =
+                  "url('./assets/images/pacific-rim-bg.png')";
+              } else if (i === 5) {
+                document.getElementsByClassName(
+                  "main-container"
+                )[0].style.backgroundImage =
+                  "url('./assets/images/highlandar-bg.png')";
+              } else if (i === 6) {
+                document.getElementsByClassName(
+                  "main-container"
+                )[0].style.backgroundImage =
+                  "url('./assets/images/game-bg.png')";
+              } else if (i === 7) {
+                document.getElementsByClassName(
+                  "main-container"
+                )[0].style.backgroundImage =
+                  "url('./assets/images/game-bg.png')";
+              }
+
+              // for (let i = 0; i < contentBx.length; i++) {
+              //   contentBx[i].className = "contentBx";
+              // }
+              document.getElementById(this.dataset.id).classList.add("active");
+              var selected = document.getElementsByClassName("selected");
+              var selID = $(selected).attr("id");
+              if (this.dataset.id != selID) {
+                $(selected).removeClass("active");
+              }
+
+              ismouseover = true;
+            });
+            iconBlock[i].addEventListener("mouseout", function () {
+              if (ismouseover) {
+                document
+                  .getElementById(this.dataset.id)
+                  .classList.remove("active");
+                var selected = document.getElementsByClassName("selected");
+                $(selected).addClass("active");
+                // document.getElementsByClassName(".selected").className = "contentBx active";
+              }
+            });
+          }
+        }
+        changeContentOnMouseHover();
+
+        const text = document.querySelector(".text-rounded h2");
+        text.innerHTML = text.innerText
+          .split("")
+          .map(
+            (char, i) =>
+              `<span style="transform: rotate(${i * 5})">${char}</span>`
+          );
+      });
+
+      $(document).ready(function () {
+        $(".icon-block-img").click(function () {
+          var dataTab = $(this).data("tab");
+          $(".icon-block-img").removeClass("active");
+          $(this).addClass("active");
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
